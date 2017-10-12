@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-localehelper",
+  "version": "0.0.1",
+  "description": "Cordova Locale Helper Plugin",
+  "cordova": {
+    "id": "cordova-plugin-localehelper",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Vahn84/cordova-plugin-localehelper.git"
+  },
+  "bugs": {
+  },
+  "keywords": [
+    "cordova"
+  ],
+  "scripts": {
+  },
+  "author": "Vahn",
+  "license": "Apache-2.0",
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "devDependencies": {
+  	"cordova-plugin-add-swift-support": "^1.6.2"
+  }
+}

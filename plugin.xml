@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-localehelper" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>LocaleHelper</name>
+    <js-module name="LocaleHelper" src="www/LocaleHelper.js">
+        <clobbers target="window.localehelper"/>
+    </js-module>
+    
+    <platform name="ios">
+        
+        <config-file target="config.xml" parent="/*">
+            <feature name="LocaleHelper">
+                <param name="ios-package" value="LocaleHelper"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="src/ios/LocaleHelper.swift"/>
+    
+    </platform>
+    <platform name="android">
+        
+        <config-file target="config.xml" parent="/*">
+            <feature name="LocaleHelper">
+                <param name="android-package" value="com.vahn.cordova.localehelper.LocaleHelper"/>
+            </feature>
+        </config-file>
+        
+    <source-file src="src/android/LocaleHelper.java" target-dir="src/com/vahn/cordova/localehelper/" />
+    </platform>
+</plugin>
