@@ -1,17 +1,17 @@
 
 
-var mpbx_nav =
+var localehelper =
         {
-            navigator: function (mpbxNavigatorSuccess, mpbxNavigatorError, action, args)
+            execute: function (localehelperSuccess, localehelperError, action, args)
             {
                 cordova.exec(
-                        mpbxNavigatorSuccess,
-                        mpbxNavigatorError,
-                        'MPBXNavigator',
+                        localehelperSuccess,
+                        localehelperError,
+                        'LocaleHelper',
                         action,
                         [args]
                             );
             }
         };
 
-        module.exports = mpbx_nav;
+        module.exports = localehelper;

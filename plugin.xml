@@ -5,7 +5,7 @@
         <clobbers target="window.localehelper"/>
     </js-module>
     
-    <platform name="ios">
+<!--     <platform name="ios">
         
         <config-file target="config.xml" parent="/*">
             <feature name="LocaleHelper">
@@ -15,7 +15,7 @@
         
         <source-file src="src/ios/LocaleHelper.swift"/>
     
-    </platform>
+    </platform> -->
     <platform name="android">
         
         <config-file target="config.xml" parent="/*">
@@ -25,5 +25,6 @@
         </config-file>
         
     <source-file src="src/android/LocaleHelper.java" target-dir="src/com/vahn/cordova/localehelper/" />
+    <source-file src="src/android/LocaleHelperPlugin.java" target-dir="src/com/vahn/cordova/localehelper/" />
     </platform>
 </plugin>
